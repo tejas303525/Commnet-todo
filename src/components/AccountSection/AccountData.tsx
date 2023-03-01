@@ -25,7 +25,7 @@ const AccountData: React.FC = () => {
     >
       <section className="p-5 flex flex-col h-full">
         <span className="flex items-center mx-auto">
-          <span className="font-medium">Hi, User!</span>
+          <span >Hi, User!</span>
           
         </span>
 

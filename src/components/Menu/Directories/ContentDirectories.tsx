@@ -3,7 +3,6 @@ import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { tasksActions } from "../../../store/Tasks.store";
 import ModalDirectory from "../../Utilities/ModalDirectory";
 import ItemDirectory from "./ItemDirectory";
-
 const ContentDirectories: React.FC<{ classActive: string }> = ({
   classActive,
 }) => {
@@ -37,7 +36,7 @@ const ContentDirectories: React.FC<{ classActive: string }> = ({
           onClose={closeModalDirectoryHandler}
           onConfirm={createNewDirectoryHandler}
           btnText="Create"
-          title="Create new directory"
+          title="Add new staff"
         />
       )}
 
@@ -50,7 +49,7 @@ const ContentDirectories: React.FC<{ classActive: string }> = ({
         onClick={() => setModalDirIsShown(true)}
         className="px-3 py-1 border-slate-300 dark:border-slate-700 border-2 ml-9 mt-2 rounded-md border-dashed hover:text-violet-500"
       >
-        + New
+        + Add
       </button>
     </>
   );

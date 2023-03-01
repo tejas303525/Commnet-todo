@@ -120,7 +120,7 @@ const ModalCreateTask: React.FC<{
           Title
           <input
             type="text"
-            placeholder="e.g, study for the test"
+            placeholder="Assign project/activities "
             required
             value={title}
             onChange={({ target }) => setTitle(target.value)}
@@ -142,14 +142,14 @@ const ModalCreateTask: React.FC<{
         <label>
           Description (optional)
           <textarea
-            placeholder="e.g, study for the test"
+            placeholder="Enter description about the work"
             className="w-full"
             value={description}
             onChange={({ target }) => setDescription(target.value)}
           ></textarea>
         </label>
         <label>
-          Select a directory
+          Select the staff
           <select
             className="block w-full"
             value={selectedDirectory}

@@ -8,7 +8,7 @@ const links = [
   },
   {
     name: "All tasks",
-    path: "/",
+    path: "/Alltask",
   },
   {
     name: "Important tasks",
@@ -22,6 +22,7 @@ const links = [
     name: "Uncompleted tasks",
     path: "/uncompleted",
   },
+  
 ];
 
 const NavLinks: React.FC<{ classActive: string }> = ({ classActive }) => {

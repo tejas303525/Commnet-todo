@@ -13,7 +13,6 @@ const SearchResults: React.FC = () => {
   useEffect(() => {
     const query = searchParams.get("q");
     if (!query) {
-      // se "q" for igual a '' ou "q" não existir
       navigate("/");
     } else {
       setCurrQueryParam(query);

@@ -1,14 +1,12 @@
 import React from "react";
-import AccountData from "./components/AccountSection/AccountData";
-import Footer from "./components/Footer";
-import Menu from "./components/Menu/Menu";
-import TasksSection from "./components/TasksSection/TasksSection";
 import ModalCreateTask from "./components/Utilities/ModalTask";
 import { Task } from "./interfaces";
 import { useAppDispatch, useAppSelector } from "./store/hooks";
 import { modalActions } from "./store/Modal.store";
 import { tasksActions } from "./store/Tasks.store";
-import Dashboard from "./components/Dashboard"
+import Signin from "./components/Signin"
+import "./App.css"
+
 
 const App: React.FC = () => {
   const modal = useAppSelector((state) => state.modal);
@@ -32,11 +30,7 @@ const App: React.FC = () => {
           onConfirm={createNewTaskHandler}
         />
       )}
-      <Menu />
-      <TasksSection />
-      <Footer />
-      <AccountData />
-      <Dashboard />
+      <Signin />
     </div>
   );
 };

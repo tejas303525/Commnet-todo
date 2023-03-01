@@ -33,7 +33,7 @@ const useSortTasks = (tasks: Task[]) => {
         return sorted.reverse();
       }
 
-      return tasks; //se não existir tasks (para não retornar undefined)
+      return tasks; 
     };
 
     const sortByCompletedStatus = (completed: boolean): Task[] => {
